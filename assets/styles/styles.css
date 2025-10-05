@@ -182,7 +182,7 @@ body {
 .cta{
   outline: none;
   border: none;
-  background-color: hsl(224, 30%, 27%);
+  background: hsl(224, 30%, 27%);
   padding: .8rem;
   margin: 1rem 0;
   border-radius: 24px;
@@ -190,8 +190,13 @@ body {
   font-size: 19px;
   font-weight: 800;
   font-family: inherit ;
+  transition: all 0.4s ease;
 }
-
+.cta:hover{
+  background: linear-gradient(hsl(252, 100%, 67%) 2%, hsl(241, 81%, 54%));
+  transform: scale(1.02);
+  cursor: pointer;
+}
 
 
 
@@ -209,7 +214,9 @@ body {
     align-items: stretch;
     overflow: hidden;
   }
-
+  .result{
+    padding-top: 5rem;
+  }
   .result,
   .card {
     flex: 1 1 50%;
