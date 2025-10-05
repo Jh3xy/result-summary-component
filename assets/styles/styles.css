@@ -26,5 +26,11 @@
  
 }
 html{
- font-size: 16px; /* for proper font scaling*/
+ font-size: 18px; /* for proper font scaling*/
 }
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+
