@@ -30,6 +30,71 @@ html{
 }
 body {
   font-family: "Hanken Grotesk", sans-serif;
+  background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.1) 80%, hsla(252, 100%, 67%, 0.2));
+}
+.summary h2{
+ color: hsl(224, 30%, 27%);
+ margin-bottom: 18px;
+}
+.flex-container{
+ display : flex;
+ min-height: 100vh;
+ align-items: center;
+ justify-content: center;
+}
+.icon{
+ background-color: red;
+ display: inline-block;
+}
+.card{
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ background-color: var(--clr-white);
+ width: 90%;
+ max-width: 320px;
+ padding: 1rem;
+ border-radius: 18px;
+ box-shadow: 1px 1px 4px  hsla(241, 72%, 46%, 0.2);
+}
+.category{
+ display: flex;
+ gap: 5px;
+}
+.icon{
+ background-color: hsla(221, 100%, 96%, 0.3);
+ display: inline-block;
+ padding: 2px;
+ 
+ border-radius: 4px;
+}
+.reaction{
+ --clr-lightred: hsl(0, 100%, 67%);
+ 
+ color: var(--clr-lightred);
+}
+.memory{
+ color: var(--clr-orange-yellow);
+}
+.verbal{
+ color: var(--clr-greenteal);
+}
+.visual{
+ color: var(--clr-cobaltblue);
+}
+
+.list{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 14px;
+ border-radius: 10px;
+ padding: .6rem;
+ background-color: hsla(0, 100%, 87%, 0.1);
+}
+.score span{
+ color: var(--clr-light-lavender);
+ 
 }
 
 
