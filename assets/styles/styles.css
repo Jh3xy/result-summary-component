@@ -33,6 +33,10 @@ body {
   background-color: var(--clr-white);
   /* background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.1) 80%, hsla(252, 100%, 67%, 0.2)); */
 }
+.summary{
+ width: 100%;
+ background-color: red;
+}
 .summary h2{
  color: hsl(224, 30%, 27%);
  margin-bottom: 18px;
@@ -176,6 +180,22 @@ body {
 
 
 
+
+/* Media Queries.*/
+
+/* Tablet Portrait and Landscape */
+@media (min-width: 768px){
+ .wrap{
+  flex-direction: row;
+  max-width: 600px;
+ }
+ .result{
+  flex: 1;
+ }
+ .summary{
+  flex: 1;
+ }
+}
 
 
 
