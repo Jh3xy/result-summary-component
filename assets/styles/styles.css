@@ -52,12 +52,41 @@ body {
  max-width: 320px;
  background-color: var(--clr-white);
  box-shadow: 1px 1px 4px  hsla(241, 72%, 46%, 0.2);
+ display: flex;
+ flex-direction: column;
 }
 .wrap,
 .wrap > div{
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   border-radius: 18px;
+}
+.result{
+ --clr-lightslate-blue: hsl(252, 100%, 67%);
+ --clr-lightroyal-blue: hsl(241, 81%, 54%);
+ background: linear-gradient(hsl(252, 100%, 67%) 2%, hsl(241, 81%, 54%));
+ color: var(--clr-white);
+ text-align: center;
+ padding: 1.5rem 3rem;
+ border-bottom-left-radius: 18px;
+ border-bottom-right-radius: 18px;
+}
+.result h2{
+ color: var(--light-lavender);
+ font-size: 19px;
+}
+.result .description{
+ font-size: 16px;
+ width: 95%;
+ margin: 0 auto;
+ color: hsla(241, 100%, 89%, 0.6);
+ font-weight: 600 ;
+ line-height: 1.1;
+}
+.remark{
+ font-weight: 700;
+ font-size: 1.1rem;
+ margin: 2px 0 6px;
 }
 .card{
  text-align: center;
@@ -66,17 +95,28 @@ body {
  padding: 1rem;
  border-bottom-left-radius: 18px;
  border-bottom-right-radius: 18px;
- 
 }
-.result{
- --clr-lightslate-blue: hsl(252, 100%, 67%);
- --clr-lightroyal-blue: hsl(241, 81%, 54%);
- background: linear-gradient(hsl(252, 100%, 67%) 5%, hsl(241, 81%, 54%));
- color: var(--clr-white);
- text-align: center;
- padding: 1.5rem 3rem;
- border-bottom-left-radius: 18px;
- border-bottom-right-radius: 18px;
+.circle{
+ background: linear-gradient(hsla(241, 72%, 46%, .6), hsla(256, 72%, 46%, 0.1));
+ /*
+ hsla(256, 72%, 46%, 1);
+ --clr-persianblue: hsla(241, 72%, 46%, 0)
+ */
+ padding: 1rem;
+ width: 7rem;
+ height: 7rem;
+ margin: 1rem auto .5rem;
+ border-radius: 50%;
+}
+.circle h1{
+ font-size: 3.8rem;
+ line-height: 1.4;
+}
+.circle p{
+ color: hsla(241, 100%, 89%, 0.3);
+ margin-top: -6px;
+ font-weight: 700;
+ font-size: 16px;
 }
 .category{
  display: flex;
@@ -84,16 +124,15 @@ body {
  align-self: center;
  justify-content: center;
 }
+.category h3{
+ font-size: 17px;
+ transform: translateY(3px);
+}
 .icon{
  background-color: hsla(221, 100%, 96%, 0.3);
  display: inline-block;
  padding: 2px;
- 
  border-radius: 4px;
-}
-.category h3{
- font-size: 17px;
- transform: translateY(3px);
 }
 .reaction{
  --clr-lightred: hsla(0, 100%, 67%, 0.6);
