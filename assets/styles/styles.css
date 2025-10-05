@@ -30,7 +30,8 @@ html{
 }
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.1) 80%, hsla(252, 100%, 67%, 0.2));
+  background-color: var(--clr-white);
+  /* background: linear-gradient(180deg, hsla(252, 100%, 67%, 0.1) 80%, hsla(252, 100%, 67%, 0.2)); */
 }
 .summary h2{
  color: hsl(224, 30%, 27%);
@@ -46,20 +47,42 @@ body {
  background-color: red;
  display: inline-block;
 }
+.wrap{
+ width: 90%;
+ max-width: 320px;
+ background-color: var(--clr-white);
+ box-shadow: 1px 1px 4px  hsla(241, 72%, 46%, 0.2);
+}
+.wrap,
+.wrap > div{
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  border-radius: 18px;
+}
 .card{
  text-align: center;
  display: flex;
  flex-direction: column;
- background-color: var(--clr-white);
- width: 90%;
- max-width: 320px;
  padding: 1rem;
- border-radius: 18px;
- box-shadow: 1px 1px 4px  hsla(241, 72%, 46%, 0.2);
+ border-bottom-left-radius: 18px;
+ border-bottom-right-radius: 18px;
+ 
+}
+.result{
+ --clr-lightslate-blue: hsl(252, 100%, 67%);
+ --clr-lightroyal-blue: hsl(241, 81%, 54%);
+ background: linear-gradient(hsl(252, 100%, 67%) 5%, hsl(241, 81%, 54%));
+ color: var(--clr-white);
+ text-align: center;
+ padding: 1.5rem 3rem;
+ border-bottom-left-radius: 18px;
+ border-bottom-right-radius: 18px;
 }
 .category{
  display: flex;
  gap: 5px;
+ align-self: center;
+ justify-content: center;
 }
 .icon{
  background-color: hsla(221, 100%, 96%, 0.3);
@@ -68,18 +91,28 @@ body {
  
  border-radius: 4px;
 }
+.category h3{
+ font-size: 17px;
+ transform: translateY(3px);
+}
 .reaction{
- --clr-lightred: hsl(0, 100%, 67%);
+ --clr-lightred: hsla(0, 100%, 67%, 0.6);
  
  color: var(--clr-lightred);
 }
 .memory{
+ --clr-orange-yellow: hsla(39, 100%, 56%, 0.6);
+ 
  color: var(--clr-orange-yellow);
 }
 .verbal{
+ --clr-greenteal: hsla(166, 100%, 37%, 0.6);
+ 
  color: var(--clr-greenteal);
 }
 .visual{
+ --clr-cobaltblue: hsla(234, 85%, 45%, 0.6);
+ 
  color: var(--clr-cobaltblue);
 }
 
@@ -92,10 +125,22 @@ body {
  padding: .6rem;
  background-color: hsla(0, 100%, 87%, 0.1);
 }
-.score span{
- color: var(--clr-light-lavender);
- 
+.score{
+ color: hsl(224, 30%, 27%);
+ font-weight: 800;
 }
+.score span{
+ color: hsla(224, 30%, 27%,0.4);
+ font-weight: 700;
+ font-size: 17px;
+}
+
+
+
+
+
+
+
 
 
 
