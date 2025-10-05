@@ -3,3 +3,28 @@
  padding: 0;
  box-sizing: border-box;
 }
+:root{
+ /* Primary colors */
+ --clr-lightred: hsl(0, 100%, 67%);
+ --clr-orange-yellow: hsl(39, 100%, 56%);
+ --clr-greenteal: hsl(166, 100%, 37%);
+ --clr-cobaltblue: hsl(234, 85%, 45%);
+ 
+ /*Gradients*/
+ /* Background */
+ --clr-lightslate-blue: hsl(252, 100%, 67%);
+ --clr-lightroyal-blue: hsl(241, 81%, 54%);
+ /*Card circle*/
+ --clr-violetblue: hsla(256, 72%, 46%, 1);
+ --clr-persianblue: hsla(241, 72%, 46%, 0);
+ 
+ /*Neutral*/
+ --clr-white: hsl(0, 0%, 100%);
+ --pale-blue: hsl(221, 100%, 96%);
+ --light-lavender: hsl(241, 100%, 89%);
+ --dark-grayblue: hsl(224, 30%, 27%);
+ 
+}
+html{
+ font-size: 16px; /* for proper font scaling*/
+}
